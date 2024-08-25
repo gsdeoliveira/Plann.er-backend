@@ -53,9 +53,65 @@ public class Trip {
 		this.startsAt = LocalDateTime.parse(payload.starts_at(), DateTimeFormatter.ISO_DATE_TIME);
 		this.endsAt = LocalDateTime.parse(payload.ends_at(), DateTimeFormatter.ISO_DATE_TIME);
 	}
+	
+	public Trip() {
+		
+	}
 
 	public UUID getId() {
 		return id;
+	}
+
+	public void setId(UUID id) {
+		this.id = id;
+	}
+
+	public String getDestination() {
+		return destination;
+	}
+
+	public void setDestination(String destination) {
+		this.destination = destination;
+	}
+
+	public LocalDateTime getStartsAt() {
+		return startsAt;
+	}
+
+	public void setStartsAt(LocalDateTime startsAt) {
+		this.startsAt = startsAt;
+	}
+
+	public LocalDateTime getEndsAt() {
+		return endsAt;
+	}
+
+	public void setEndsAt(LocalDateTime endsAt) {
+		this.endsAt = endsAt;
+	}
+
+	public Boolean getIsConfirmed() {
+		return isConfirmed;
+	}
+
+	public void setIsConfirmed(Boolean isConfirmed) {
+		this.isConfirmed = isConfirmed;
+	}
+
+	public String getOwnerName() {
+		return ownerName;
+	}
+
+	public void setOwnerName(String ownerName) {
+		this.ownerName = ownerName;
+	}
+
+	public String getOwnerEmail() {
+		return ownerEmail;
+	}
+
+	public void setOwnerEmail(String ownerEmail) {
+		this.ownerEmail = ownerEmail;
 	}
 
 }
